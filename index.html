@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In and Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Toggle Buttons -->
+        <div class="toggle-buttons">
+            <button id="loginBtn" class="active">Log In</button>
+            <button id="signupBtn">Sign Up</button>
+        </div>
+
+        <!-- Log In Form -->
+        <form id="loginForm" class="form active">
+            <h2>LOG IN</h2>
+            <input type="number" id="loginCin" placeholder="Your CIN" required>
+            <button type="submit">SUBMIT</button>
+            <p>Forgot your password?</p>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form id="signupForm" class="form">
+            <h2>SIGN UP</h2>
+            <input type="number" id="signupCin" placeholder="Your CIN" required>
+            <input type="text" id="signupName" placeholder="Your Name" required>
+            <input type="text" id="signupLastName" placeholder="Your Last Name" required>
+            <input type="email" id="signupEmail" placeholder="Your Email" required>
+            <input type="tel" id="signupTelephone" placeholder="Your Telephone Number" required>
+            <select id="userType" required>
+                <option value="">Select User Type</option>
+                <option value="client">Client</option>
+                <option value="chauffeur">Chauffeur</option>
+            </select>
+            <div id="chauffeurFields" style="display: none;">
+                <label for="uploadPicture">Upload Picture:</label>
+                <input type="file" id="uploadPicture" accept="image/*">
+                <label for="uploadCartegrise">Upload Cartegrise:</label>
+                <input type="file" id="uploadCartegrise" accept="image/*">
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
