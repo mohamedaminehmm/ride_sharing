@@ -42,16 +42,5 @@ const FetchDataPage = () => {
     );
 };
 
-async function insertUser(usersToInsert) {
-    const { data, error } = await supabase
-      .from('users')
-      .insert(usersToInsert);
-  
-    if (error) {
-      console.error('Error inserting data:', error);
-    } else {
-      console.log('Inserted data:', data);
-    }
-  }
 
 export default FetchDataPage; // Make sure this is a default export

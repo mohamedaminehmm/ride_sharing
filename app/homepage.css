@@ -1,0 +1,47 @@
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .rides-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ride-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ride-card h2 {
+    margin: 0 0 10px;
+  }
+  
+  .ride-card p {
+    margin: 5px 0;
+  }
+  
+  .ride-card button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ride-card button:hover {
+    background-color: #005bb5;
+  }
